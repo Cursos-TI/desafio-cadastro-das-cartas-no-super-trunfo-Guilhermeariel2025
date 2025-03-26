@@ -13,7 +13,7 @@ int main() {
     // sintaxe scanf
     // scanf("fomato1" "formato2, ")
 
-    printf("Novo Comit");
+    printf("Novo Comit"\n);
 
 
 
