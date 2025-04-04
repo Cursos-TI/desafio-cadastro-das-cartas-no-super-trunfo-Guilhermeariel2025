@@ -5,16 +5,19 @@ int main() {
      char carta01[15] = "Copas";
      char carta02[15] = "Espada";
      char estado1[30] = "Ceara";
-     char estado2[30] = "Amazona";
+     char estado2[30] = "Amazonas";
      char codigo1[10] = "C123";
      char codigo2[10] = "AM234";
      char cidade1[20] = "Fortaleza";
      char cidade2[20] = "Manaus";
      int populacao1 = "8700000";
      int populacao2 = "8900000";
-     float area1 =  4000;
-     float area2 =  500;
-
+     float area1 =  4.000;
+     float area2 =  5.000;
+     float pib_cidade1 = 100.000;
+     float pib_cidade2 = 200.000;
+     int ponto_turistico_cidade1 = "50";
+     int ponto_turistico_cidade2 = "60";
 
 
     printf("Digite o nome da carta 01:");
@@ -65,6 +68,28 @@ int main() {
     scanf("%f", &area2);
     printf("A area da cidade 2 e: %f\n", area2);
 
+    printf("Digite o PIB da Cidade 1:");
+    scanf("%f", &pib_cidade1);
+    printf("O PIB da cidade 1 e: %f\n", pib_cidade1);
+
+    printf("Digite o PIB da Cidade 2:");
+    scanf("%f", &pib_cidade2);
+    printf("O PIB da cidade 2 e: %f\n", pib_cidade2);
+
+    printf("Digite o ponto turistico da cidade 1:");
+    scanf("%d", &ponto_turistico_cidade1);
+    printf("O ponto turistico da cidade 1 e: %d\n", ponto_turistico_cidade1);
+    
+    printf("Digite o ponto turistico da cidade 2:");
+    scanf("%d", &ponto_turistico_cidade2);
+    printf("O ponto turistico da cidade 2 e: %d\n", ponto_turistico_cidade2);
+
+
+
+
+
  return 0;
 
 }
+
+    
