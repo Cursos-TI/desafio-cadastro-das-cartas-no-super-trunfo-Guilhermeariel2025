@@ -1,67 +1,70 @@
 #include <stdio.h>
 
+
 int main() {
-    int populacao = 750000;
-    char estado1[15] = "Ceará";  // Corrigido: Ajustei o tamanho do vetor para 15
-    char estado2[20] = "Rio de Janeiro"; // Corrigido: Ajustei o tamanho do vetor para 20
-    char carta1[20] = "Rei de Copas";  // Corrigido: Adicionado = para atribuição
-    char carta2[15] = "4 de Paus";     // Corrigido: Adicionado = para atribuição
-    char cidade1[20] = "Fortaleza";  // Corrigido: Ajustei o tamanho do vetor para 20
-    char cidade2[20] = "Copacabana"; // Corrigido: Ajustei o tamanho do vetor para 20
-    char codigo[15];
-    float area = 16000;
-    double pib;
-    int numeros_pontos_turisticos;
+     char carta01[15] = "Copas";
+     char carta02[15] = "Espada";
+     char estado1[30] = "Ceara";
+     char estado2[30] = "Amazona";
+     char codigo1[10] = "C123";
+     char codigo2[10] = "AM234";
+     char cidade1[20] = "Fortaleza";
+     char cidade2[20] = "Manaus";
+     int populacao1 = "8700000";
+     int populacao2 = "8900000";
+     float area1 =  4000;
+     float area2 =  500;
 
-    // Input e output para estado
-    printf("Digite o Estado1: ");
-    scanf("%s", estado1);
-    printf("O estado é: %s\n", estado1);  // Corrigido: ajustei a mensagem
 
-    // Input e output para estado
-    printf("Digite o Estado2: ");
-    scanf("%s", estado2);
-    printf("O estado é %s\n", estado2); // Corrigido: ajustei a mensagem
 
-    // Input e output para populacao
-    printf("Digite a população: ");
-    scanf("%d", &populacao);
-    printf("A população é: %d\n", populacao);
-
-    // Input e output para area
-    printf("Digite a área em km²: ");
-    scanf("%f", &area);
-    printf("A área é: %.2f km²\n", area);
-
-    // Input e output para pib
-    printf("Digite o PIB: ");
-    scanf("%lf", &pib);
-    printf("O PIB é: %.2f\n", pib);
-
-    // Input e output para numeros_pontos_turisticos
-    printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &numeros_pontos_turisticos);
-    printf("O número de pontos turísticos é: %d\n", numeros_pontos_turisticos);
-
-    // Input e output para cidade1
-    printf("Digite a Cidade1: ");
-    scanf("%s", cidade1);  // Corrigido para cidade1
-    printf("A cidade1 é: %s\n", cidade1);
-
-    // Input e output para codigo
-    printf("Digite o código: ");
-    scanf("%s", codigo);
-    printf("O código é: %s\n", codigo);
-
-    // Input e output para carta1
-    printf("Digite a carta1: ");
-    scanf("%s", carta1);
-    printf("A carta1 é: %s\n", carta1);
+    printf("Digite o nome da carta 01:");
+    scanf("%s", &carta01);
+    printf("O nome da carta 01 e: %s\n", carta01);
     
-    // Input e output para carta2
-    printf("Digite a carta2: ");
-    scanf("%s", carta2);
-    printf("A carta2 é: %s\n", carta2);
+    printf("Digite o nome da carta 02:");
+    scanf("%s", &carta02);
+    printf("O nome da carta 02 e: %s\n", carta02);
 
-    return 0;
+    printf("Digite o estado 1:");
+    scanf("%s", &estado1);
+    printf("O estado 1 e: %s\n", estado1);
+    
+    printf("Digite o estado 2:");
+    scanf("%s", &estado2);
+    printf("O estado 2 e \n: %s\n", estado2);
+
+    printf("Digite o codigo da carta 1:");
+    scanf("%s", &codigo1);
+    printf("O codigo da carta 1 e: %s\n", codigo1);
+
+    printf("Digite o codigo da carta 2:");
+    scanf("%s", &codigo2);
+    printf("O codigo da carta 2 e: %s\n", codigo2);
+
+    printf("Digite o Nome da Cidade 1:");
+    scanf("%s", &cidade1);
+    printf("O Nome da cidade 1 e: %s\n", cidade1);
+
+    printf("Digite o Nome da Cidade 2:");
+    scanf("%s", &cidade2);
+    printf("O Nome da Cidade 2 e: %s\n", cidade2);
+
+    printf("Digite a populacao da cidade 1:");
+    scanf("%d", &populacao1);
+    printf("A populacao da cidade 1 e: %d\n", populacao1);
+
+    printf("Digite a populacao da cidade 2:");
+    scanf("%d", &populacao2);
+    printf("A populacao da cidade 1 e: %d\n", populacao2);
+
+    printf("Digite a area da cidade 1:");
+    scanf("%f", &area1);
+    printf("A area da cidade 1 e: %f\n", area1);
+
+    printf("Digite a area da cidade 2:");
+    scanf("%f", &area2);
+    printf("A area da cidade 2 e: %f\n", area2);
+
+ return 0;
+
 }
