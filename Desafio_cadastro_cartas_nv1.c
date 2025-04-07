@@ -2,8 +2,8 @@
 
 
 int main() {
-     char carta01[15] = "Copas";
-     char carta02[15] = "Espada";
+     char carta01[15] = "Ceara (CE)";
+     char carta02[15] = "Amazonas (AM)";
      char estado1[30] = "Ceara";
      char estado2[30] = "Amazonas";
      char codigo1[10] = "C123";
@@ -12,10 +12,8 @@ int main() {
      char cidade2[20] = "Manaus";
      int populacao1 = "8700000";
      int populacao2 = "8900000";
-     float area1 =  4.000;
-     float area2 =  5.000;
-     float pib_cidade1 = 100.000;
-     float pib_cidade2 = 200.000;
+     float area1 = 40.000, area2 = 50.000;
+     float pib_cidade1 = 30.000, pib_cidade2 = 40.000;
      int ponto_turistico_cidade1 = "50";
      int ponto_turistico_cidade2 = "60";
 
@@ -60,21 +58,6 @@ int main() {
     scanf("%d", &populacao2);
     printf("A populacao da cidade 1 e: %d\n", populacao2);
 
-    printf("Digite a area da cidade 1:");
-    scanf("%f", &area1);
-    printf("A area da cidade 1 e: %f\n", area1);
-
-    printf("Digite a area da cidade 2:");
-    scanf("%f", &area2);
-    printf("A area da cidade 2 e: %f\n", area2);
-
-    printf("Digite o PIB da Cidade 1:");
-    scanf("%f", &pib_cidade1);
-    printf("O PIB da cidade 1 e: %f\n", pib_cidade1);
-
-    printf("Digite o PIB da Cidade 2:");
-    scanf("%f", &pib_cidade2);
-    printf("O PIB da cidade 2 e: %f\n", pib_cidade2);
 
     printf("Digite o ponto turistico da cidade 1:");
     scanf("%d", &ponto_turistico_cidade1);
@@ -84,12 +67,34 @@ int main() {
     scanf("%d", &ponto_turistico_cidade2);
     printf("O ponto turistico da cidade 2 e: %d\n", ponto_turistico_cidade2);
 
+    if(area1 >= area2){
+      printf("A cidade fortalez e maior \n");
+    }else{
+      printf("A Cidade de fortaleza e menor que Cidade de  Manaus \n");
+    }
 
+    if(pib_cidade1  >= pib_cidade2){
+      printf("A cidade de Fortaleza maior\n");
+    }else{
+      printf("O PiB da cidade de Manaus e maior \n");
+    }
 
+    // Imprimindo as cartas
+    printf("Carta 1 - %s: %d\n",carta01 , populacao1);
+    printf("Carta 2 - %s: %d\n", carta02, populacao2);
 
+    // Verificando qual carta venceu
+    if (populacao1 <= populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", carta01);
+    } else {
+        printf("Resultado: Carta 2 (%s) venceu!\n", carta02);
+    }
 
- return 0;
-
+    return 0;
 }
+
+    
+
+
 
     
